@@ -1,0 +1,9 @@
+name: "GCP Storage Download"
+description: "Download a directory from an GCP Storage"
+author: braineanear
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: refresh-cw
+  color: blue
