@@ -1,9 +1,22 @@
 name: "GCP Storage Download"
 description: "Download a directory from an GCP Storage"
-author: braineanear
+author: "braineanear"
 runs:
-  using: docker
-  image: Dockerfile
+  using: "docker"
+  image: "Dockerfile"
 branding:
-  icon: refresh-cw
-  color: blue
+  icon: "refresh-cw"
+  color: "blue"
+inputs:
+  GCP_SERVICE_ACCOUNT_KEY_FILE:
+    description: "Google Service Account Key File"
+    required: true
+  GCP_STORAGE_BUCKET:
+    description: "Google Storage Bucket Name"
+    required: true
+  SOURCE_DIR:
+    description: "Source File"
+    required: true
+  DEST_DIR:
+    description: "Destination File"
+    required: true
