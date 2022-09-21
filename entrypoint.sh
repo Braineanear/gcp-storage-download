@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt install jq
+apt install jq
 
 jq -n $GCP_SERVICE_ACCOUNT_KEY_FILE > json_file.json
 
