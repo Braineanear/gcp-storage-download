@@ -2,7 +2,7 @@
 
 apt install jq
 
-jq -n $GCP_SERVICE_ACCOUNT_KEY_FILE > json_file.json
+echo "$GCP_SERVICE_ACCOUNT_KEY_FILE" | base64 -d > json_file.json
 
 gcloud auth activate-service-account --key-file json_file.json
 
